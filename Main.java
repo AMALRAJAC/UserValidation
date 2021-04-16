@@ -32,29 +32,6 @@ class regex
                         System.out.println("password contain at least one uppercase  character");
                         if (password.matches(".*[0-9].*")) {
                             System.out.println("password contain at least one numerical character");
-                            if (password.matches(".*[*.!@#$%^&(){}:;'<>,?/~`_+=|].*")) {
-                                Pattern p = Pattern.compile("[*.!@#$%^&(){}:;'<>,?/~`_+=|]");
-                                Matcher m = p.matcher(password);
-                                int count = 0;
-                                while (m.find()) {
-                                    count++;
-                                }
-                                System.out.println("Count of special characters present= "+count);
-                                if (count == 1) {
-                                    System.out.println("password contain exact one special character");
-                                    valid=true;
-                                } else {
-                                    Scanner sc=new Scanner(System.in);
-                                    System.out.println("String is not acceptable");
-                                    System.out.println("Re-enter the value...");
-                                    password=sc.nextLine();
-                                }
-                            }else{
-                                Scanner sc=new Scanner(System.in);
-                                System.out.println("String is not acceptable");
-                                System.out.println("Re-enter the value...");
-                                password=sc.nextLine();
-                            }
                         }else{
                             Scanner sc=new Scanner(System.in);
                             System.out.println("String is not acceptable");
