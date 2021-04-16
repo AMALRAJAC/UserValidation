@@ -47,20 +47,10 @@ class regex
         isValid(emailId,regex);
         valid=false;
     }
-    public static void contactNumber() {
-        String regex = "^([0-9]{2}){1}+\s[0-9]{10}$";
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the phone number");
-        System.out.println("Country code <space> phone number ");
-        String contactNumber = sc.nextLine();
-        isValid(contactNumber,regex);
-        valid=false;
-    }
     public static void main(String[] args)
     {
        firstName();
        secondName();
        emailId();
-       contactNumber();
     }
 }
