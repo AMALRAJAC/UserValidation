@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="userRegistrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-16T13:49:09" hostname="DESKTOP-9F42HSG" time="0.034">
+  <properties/>
+  <testcase name="checkPassword" classname="userRegistrationTest" time="0.022"/>
+  <testcase name="checkEmail" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkContactNumber" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkSecondName" classname="userRegistrationTest" time="0.0"/>
+  <testcase name="checkFirstName" classname="userRegistrationTest" time="0.0"/>
+  <system-out><![CDATA[password length >8
+password contain at least one lowercase  character
+password contain at least one uppercase  character
+password contain at least one numerical character
+1
+password contain exact one special character
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
