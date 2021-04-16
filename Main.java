@@ -30,18 +30,8 @@ class regex
         isValid(firstName,regex);
         valid=false;
     }
-    public static void secondName() {
-        String regex = "^[A-Z][a-z]{2,10}$";
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the second name");
-        System.out.println("1.First letter should be capital\n2.Name should contain minimum of 3 letters");
-        String secondName = sc.nextLine();
-        isValid(secondName,regex);
-        valid=false;
-    }
     public static void main(String[] args)
     {
        firstName();
-       secondName();
     }
 }
