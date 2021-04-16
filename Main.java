@@ -26,22 +26,6 @@ class regex
 
             if (password.length() > 8) {
                 System.out.println("password length >8");
-                if (password.matches(".*[a-z].*")) {
-                    System.out.println("password contain at least one lowercase  character");
-                    if (password.matches(".*[A-Z].*")) {
-                        System.out.println("password contain at least one uppercase  character");
-                    }else{
-                        Scanner sc=new Scanner(System.in);
-                        System.out.println("String is not acceptable");
-                        System.out.println("Re-enter the value...");
-                        password=sc.nextLine();
-                    }
-                }else{
-                    Scanner sc=new Scanner(System.in);
-                    System.out.println("String is not acceptable");
-                    System.out.println("Re-enter the value...");
-                    password=sc.nextLine();
-                }
             }else{
                 Scanner sc=new Scanner(System.in);
                 System.out.println("String is not acceptable");
