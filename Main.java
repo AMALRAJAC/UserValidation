@@ -39,18 +39,9 @@ class regex
         isValid(secondName,regex);
         valid=false;
     }
-    public static void emailId() {
-        String regex = "^abc.[A-Za-z0-9]+@bl.co[A-Za-z0-9.]$";
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the email id");
-        String emailId = sc.nextLine();
-        isValid(emailId,regex);
-        valid=false;
-    }
     public static void main(String[] args)
     {
        firstName();
        secondName();
-       emailId();
     }
 }
