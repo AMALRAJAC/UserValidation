@@ -21,20 +21,6 @@ class regex
             }
         }
     }
-    public static void password_check(String password){
-        for(int i=0;!valid;i++) {
-
-            if (password.length() > 8) {
-                System.out.println("password length >8");
-            }else{
-                Scanner sc=new Scanner(System.in);
-                System.out.println("String is not acceptable");
-                System.out.println("Re-enter the value...");
-                password=sc.nextLine();
-            }
-
-        }
-    }
     public static void firstName() {
         String regex = "^[A-Z][a-z]{2,10}$";
         Scanner sc=new Scanner(System.in);
@@ -70,19 +56,11 @@ class regex
         isValid(contactNumber,regex);
         valid=false;
     }
-    public static void password() {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the password");
-        String password = sc.nextLine();
-        password_check(password);
-        valid=false;
-    }
     public static void main(String[] args)
     {
        firstName();
        secondName();
        emailId();
        contactNumber();
-       password();
     }
 }
