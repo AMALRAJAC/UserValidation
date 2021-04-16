@@ -30,14 +30,6 @@ class regex
                     System.out.println("password contain at least one lowercase  character");
                     if (password.matches(".*[A-Z].*")) {
                         System.out.println("password contain at least one uppercase  character");
-                        if (password.matches(".*[0-9].*")) {
-                            System.out.println("password contain at least one numerical character");
-                        }else{
-                            Scanner sc=new Scanner(System.in);
-                            System.out.println("String is not acceptable");
-                            System.out.println("Re-enter the value...");
-                            password=sc.nextLine();
-                        }
                     }else{
                         Scanner sc=new Scanner(System.in);
                         System.out.println("String is not acceptable");
