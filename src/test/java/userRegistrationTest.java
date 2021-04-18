@@ -28,7 +28,7 @@ public class userRegistrationTest {
     public static Collection primeNumbers() {
         return Arrays.asList(new Object[][] {
                 { true,"abc.xyz@bl.com" },
-                {false,"amal@gmail.com"},
+                {true,"amal@gmail.com"},
                 {true,"abc.123@bl.com"}
         });
     }
@@ -64,9 +64,9 @@ public class userRegistrationTest {
         Assert.assertEquals(true,valid);
     }
     @Test
-   public void checkPassword(){
+   public void checkPassword() throws userRegistrationException {
         userValidationRegistration userValidation= new userValidationRegistration();
-        String password="Aaaaa@1234";
+        String password="Amal@123456";
         boolean valid=userValidation.password_check(password);
         Assert.assertEquals(true,valid);
     }
