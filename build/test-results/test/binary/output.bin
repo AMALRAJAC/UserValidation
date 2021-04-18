@@ -4,3 +4,18 @@
 3password contain at least one numerical character
 1
 .password contain exact one special character
+*Parameterized Number is : abc.xyz@bl.com
+password length >8
+4password contain at least one lowercase  character
+4password contain at least one uppercase  character
+3password contain at least one numerical character
+1
+.password contain exact one special character
+*Parameterized Number is : amal@gmail.com
+password length >8
+4password contain at least one lowercase  character
+4password contain at least one uppercase  character
+3password contain at least one numerical character
+1
+.password contain exact one special character
+*Parameterized Number is : abc.123@bl.com

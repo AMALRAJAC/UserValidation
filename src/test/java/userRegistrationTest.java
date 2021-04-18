@@ -1,8 +1,37 @@
 
-import org.junit.Assert;
-import org.junit.Test;
+import java.util.Arrays;
+import java.util.Collection;
 
+import org.junit.Test;
+import org.junit.Assert;
+import org.junit.Before;
+
+import org.junit.runners.Parameterized;
+import org.junit.runner.RunWith;
+import static org.junit.Assert.assertEquals;
+@RunWith(Parameterized.class)
 public class userRegistrationTest {
+
+    private String email;
+    private Boolean result;
+    private userValidationRegistration userValidationRegistration;
+
+    @Before
+    public void initialize(){
+        userValidationRegistration =new userValidationRegistration();
+    }
+    public userRegistrationTest(boolean result, String email){
+        this.email = email;
+        this.result = result;
+    }
+    @Parameterized.Parameters
+    public static Collection primeNumbers() {
+        return Arrays.asList(new Object[][] {
+                { true,"abc.xyz@bl.com" },
+                {false,"amal@gmail.com"},
+                {true,"abc.123@bl.com"}
+        });
+    }
     @Test
     public void checkFirstName(){
         userValidationRegistration userValidation= new userValidationRegistration();
@@ -22,10 +51,9 @@ public class userRegistrationTest {
     @Test
     public void checkEmail(){
        userValidationRegistration userValidation= new userValidationRegistration();
-       String regex = "^abc.[A-Za-z0-9]+@bl.co[A-Za-z0-9.]$";
-       String emailId="abc.xyz@bl.com";
-       boolean valid=userValidation.checkValue(regex,emailId);
-       Assert.assertEquals(true,valid);
+       String regex = "^abc[A-Za-z0-9.]+@bl.co[A-Za-z0-9.]$";
+        System.out.println("Parameterized Number is : " + email);
+        assertEquals(result, userValidationRegistration.checkValue(regex,email));
     }
     @Test
     public void checkContactNumber(){

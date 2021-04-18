@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="userRegistrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-16T13:49:09" hostname="DESKTOP-9F42HSG" time="0.034">
+<testsuite name="userRegistrationTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-04-18T11:56:25" hostname="DESKTOP-9F42HSG" time="0.067">
   <properties/>
-  <testcase name="checkPassword" classname="userRegistrationTest" time="0.022"/>
-  <testcase name="checkEmail" classname="userRegistrationTest" time="0.001"/>
-  <testcase name="checkContactNumber" classname="userRegistrationTest" time="0.001"/>
-  <testcase name="checkSecondName" classname="userRegistrationTest" time="0.0"/>
-  <testcase name="checkFirstName" classname="userRegistrationTest" time="0.0"/>
+  <testcase name="checkPassword[0]" classname="userRegistrationTest" time="0.015"/>
+  <testcase name="checkEmail[0]" classname="userRegistrationTest" time="0.005"/>
+  <testcase name="checkContactNumber[0]" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkSecondName[0]" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkFirstName[0]" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkPassword[1]" classname="userRegistrationTest" time="0.008"/>
+  <testcase name="checkEmail[1]" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkContactNumber[1]" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkSecondName[1]" classname="userRegistrationTest" time="0.0"/>
+  <testcase name="checkFirstName[1]" classname="userRegistrationTest" time="0.002"/>
+  <testcase name="checkPassword[2]" classname="userRegistrationTest" time="0.008"/>
+  <testcase name="checkEmail[2]" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkContactNumber[2]" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkSecondName[2]" classname="userRegistrationTest" time="0.0"/>
+  <testcase name="checkFirstName[2]" classname="userRegistrationTest" time="0.001"/>
   <system-out><![CDATA[password length >8
 password contain at least one lowercase  character
 password contain at least one uppercase  character
 password contain at least one numerical character
 1
 password contain exact one special character
+Parameterized Number is : abc.xyz@bl.com
+password length >8
+password contain at least one lowercase  character
+password contain at least one uppercase  character
+password contain at least one numerical character
+1
+password contain exact one special character
+Parameterized Number is : amal@gmail.com
+password length >8
+password contain at least one lowercase  character
+password contain at least one uppercase  character
+password contain at least one numerical character
+1
+password contain exact one special character
+Parameterized Number is : abc.123@bl.com
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
