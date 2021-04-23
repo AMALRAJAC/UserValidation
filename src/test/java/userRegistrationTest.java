@@ -33,7 +33,7 @@ public class userRegistrationTest {
         });
     }
     @Test
-    public void checkFirstName(){
+    public void checkFirstName() throws userRegistrationException {
         userValidationRegistration userValidation= new userValidationRegistration();
         String regex="^[A-Z][a-z]{2,10}$";
         String firstName="Amal";
@@ -41,7 +41,7 @@ public class userRegistrationTest {
         Assert.assertEquals(true,valid);
     }
     @Test
-    public void checkSecondName(){
+    public void checkSecondName() throws userRegistrationException {
         userValidationRegistration userValidation= new userValidationRegistration();
         String regex="^[A-Z][a-z]{2,10}$";
         String secondName="Raj";
@@ -49,14 +49,14 @@ public class userRegistrationTest {
         Assert.assertEquals(true,valid);
     }
     @Test
-    public void checkEmail(){
+    public void checkEmail() throws userRegistrationException {
        userValidationRegistration userValidation= new userValidationRegistration();
        String regex = "^abc[A-Za-z0-9.]+@bl.co[A-Za-z0-9.]$";
         System.out.println("Parameterized Number is : " + email);
         assertEquals(result, userValidationRegistration.checkValue(regex,email));
     }
     @Test
-    public void checkContactNumber(){
+    public void checkContactNumber() throws userRegistrationException {
         userValidationRegistration userValidation= new userValidationRegistration();
         String regex = "^([0-9]{2}){1}+\s[0-9]{10}$";
         String phone="91 1234567890";
@@ -67,7 +67,11 @@ public class userRegistrationTest {
    public void checkPassword() throws userRegistrationException {
         userValidationRegistration userValidation= new userValidationRegistration();
         String password="Amal@123456";
-        boolean valid=userValidation.password_check(password);
+        String regex="^(?=.*[0-9])"
+                + "(?=.*[a-z])(?=.*[A-Z])"
+                + "(?=.*[@#$%^&+=])"
+                + "(?=\\S+$).{8,20}$";
+        boolean valid=userValidation.checkValue(regex,password);
         Assert.assertEquals(true,valid);
     }
 }

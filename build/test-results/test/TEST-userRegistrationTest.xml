@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="userRegistrationTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-04-18T13:31:10" hostname="DESKTOP-9F42HSG" time="0.043">
+<testsuite name="userRegistrationTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-04-23T15:58:38" hostname="DESKTOP-9F42HSG" time="0.055">
   <properties/>
-  <testcase name="checkPassword[0]" classname="userRegistrationTest" time="0.003"/>
-  <testcase name="checkEmail[0]" classname="userRegistrationTest" time="0.013"/>
-  <testcase name="checkContactNumber[0]" classname="userRegistrationTest" time="0.002"/>
+  <testcase name="checkPassword[0]" classname="userRegistrationTest" time="0.008"/>
+  <testcase name="checkEmail[0]" classname="userRegistrationTest" time="0.011"/>
+  <testcase name="checkContactNumber[0]" classname="userRegistrationTest" time="0.001"/>
   <testcase name="checkSecondName[0]" classname="userRegistrationTest" time="0.002"/>
   <testcase name="checkFirstName[0]" classname="userRegistrationTest" time="0.001"/>
   <testcase name="checkPassword[1]" classname="userRegistrationTest" time="0.001"/>
-  <testcase name="checkEmail[1]" classname="userRegistrationTest" time="0.002"/>
+  <testcase name="checkEmail[1]" classname="userRegistrationTest" time="0.005"/>
   <testcase name="checkContactNumber[1]" classname="userRegistrationTest" time="0.001"/>
   <testcase name="checkSecondName[1]" classname="userRegistrationTest" time="0.001"/>
   <testcase name="checkFirstName[1]" classname="userRegistrationTest" time="0.001"/>
   <testcase name="checkPassword[2]" classname="userRegistrationTest" time="0.001"/>
-  <testcase name="checkEmail[2]" classname="userRegistrationTest" time="0.001"/>
-  <testcase name="checkContactNumber[2]" classname="userRegistrationTest" time="0.0"/>
-  <testcase name="checkSecondName[2]" classname="userRegistrationTest" time="0.0"/>
+  <testcase name="checkEmail[2]" classname="userRegistrationTest" time="0.002"/>
+  <testcase name="checkContactNumber[2]" classname="userRegistrationTest" time="0.001"/>
+  <testcase name="checkSecondName[2]" classname="userRegistrationTest" time="0.001"/>
   <testcase name="checkFirstName[2]" classname="userRegistrationTest" time="0.0"/>
   <system-out><![CDATA[Parameterized Number is : abc.xyz@bl.com
 Parameterized Number is : amal@gmail.com
-exception occurred: userRegistrationException: invalid user entry
+exception: userRegistrationException: invalid entry
 Parameterized Number is : abc.123@bl.com
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

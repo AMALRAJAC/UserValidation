@@ -1,4 +1,5 @@
 userRegistrationException.java
  userRegistrationException
 userValidationRegistration.java
+ StringFunction
  userValidationRegistration
